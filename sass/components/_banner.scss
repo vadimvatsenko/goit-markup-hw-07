@@ -1,0 +1,40 @@
+/* DONE */
+.banner {
+    background-color: $footer-bg-color;
+    /* - оставляем в случае если не загрузится картинка */
+    background-image: linear-gradient($banner-linear-gradient,
+                                    $banner-linear-gradient),
+                                    url(../image/bg/banner.jpg);
+    background-repeat: no-repeat;
+    /* - картинку не повторять */
+    background-position: center;
+    /* - по центру */
+    background-size: cover;
+    margin-left: auto;
+    /* - центрирование баннера */
+    margin-right: auto;
+    /* - центрирование баннера */
+    max-width: 1600px;
+    /* - ширина баннера, растягивать нельзя */
+    min-height: 600px;
+    text-align: center;
+    /* - если задать это значение, то все элементы внутри секции будут по центру, если их дети display: inline-block */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    &__title {
+        width: 696px;
+        margin: 0 auto;
+        color: $white-tx-bg-color;
+
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    &__button {
+        margin-top: 30px;
+    }
+}
+
+

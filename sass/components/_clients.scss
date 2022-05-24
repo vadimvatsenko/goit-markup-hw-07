@@ -1,0 +1,30 @@
+/* DONE */
+.client {
+    display: flex;
+    margin-top: 50px;
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $link-color;
+        color: $link-color;
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+
+        @include transition (border-color);
+        @include transition (color);
+        &:hover,
+        &:focus {
+            border-color: $hover-focus-color;
+            color: $hover-focus-color;
+        }
+    }
+    &__logo {
+        fill: currentColor;
+    }
+    &__list + &__list {
+        margin-left: 30px;
+    }
+}
+
