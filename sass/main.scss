@@ -3,21 +3,26 @@
 @import './utils/shadows';
 @import './utils/mixins';
 
-@import './components/global';
-@import './components/title';
-@import './components/header';
-@import './components/logo';
-@import './components/banner';
-@import './components/modal';
-@import './components/peculiarities';
-@import './components/doing';
-@import './components/team';
-@import './components/footer';
-@import './components/portfolio';
+@import './components/base/global';
+@import './components/base/title';
+@import './components/base/header';
+@import './components/base/logo';
+@import './components/base/social';
+@import './components/base/footer';
+@import './components/base/buttons';
 
-@import './components/buttons';
-@import './components/clients';
-@import './components/social';
+@import './components/main/banner';
+@import './components/main/modal';
+@import './components/main/peculiarities';
+@import './components/main/doing';
+@import './components/main/team';
+@import './components/main/clients';
+
+@import './components/portfolio/portfolio';
+
+
+
+
 
 /* 
 *{
